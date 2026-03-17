@@ -8,7 +8,7 @@ namespace Shapes
 {
     public class Triangle:Shape
     {
-        public double BaseLength { get; set; }
+        public double BaseLength { get; set; } 
         public double Height { get; set; }
 
         public Triangle(double baseLength, double height)
@@ -18,7 +18,7 @@ namespace Shapes
         }
         public override double CalculateArea()
         {
-            throw new NotImplementedException();
+            return (BaseLength * Height) / 2;
         }
 
 

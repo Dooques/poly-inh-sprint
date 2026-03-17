@@ -9,14 +9,15 @@ namespace Shapes
     public class Circle : Shape
     {
         public double Radius { get; set; }
-        public Circle() : base()
+        public double pi = 3.14;
+        public Circle(double radius) : base()
         {
-
+            Radius = radius;
         }
 
         public override double CalculateArea()
         {
-            throw new NotImplementedException();
+           return pi * (Radius * Radius);
         }
 
     }

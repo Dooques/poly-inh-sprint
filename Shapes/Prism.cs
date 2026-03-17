@@ -10,14 +10,14 @@ namespace Shapes
     public class Prism:Shape3D
     {
         public double Height { get; set; }
-        public Prism(Triangle shape) : base(shape) 
+        public Prism(Triangle shape, double height) : base(shape) 
         {  
-            Height = shape.Height; 
+            Height = height; 
         }
 
         public override double CalculateVolume()
         {
-            throw new NotImplementedException();
+            return BaseShape.CalculateArea() * Height;
         }
     }
 }

@@ -9,7 +9,6 @@ namespace Shapes
     public class Circle : Shape
     {
         public double Radius { get; set; }
-        public double pi = 3.14;
         public Circle(double radius) : base()
         {
             Radius = radius;
@@ -17,7 +16,12 @@ namespace Shapes
 
         public override double CalculateArea()
         {
-           return pi * (Radius * Radius);
+           return Math.PI * (Radius * Radius);
+        }
+
+        public double GetRadius()
+        {
+            return Radius;
         }
 
     }

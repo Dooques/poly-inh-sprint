@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    internal class Pyramid
+    public class Pyramid : Shape3D
     {
         public double Height { get; set; }
+        public Pyramid(Triangle shape, double height) : base(shape) 
+        {
+            Height = height;
+        }
+
+        public override double CalculateVolume()
+        {
+            return (BaseShape.CalculateArea() * Height) / 3;
+        }
     }
 }

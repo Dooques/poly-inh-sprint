@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Polyinh
 {
-    public class Car : Vehicle
+    public enum FuelType
     {
-        public Car(string make, string model, int speed) : base(make, model, speed)
-        {
-            
-        }
+        Unleaded, Leaded, Diesel
     }
 }

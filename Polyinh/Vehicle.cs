@@ -11,12 +11,15 @@ namespace Polyinh
         public string Make { get; private set; } 
         public string Model { get; private set; }
         public int Speed { get; private set; }
+        public Engine EngineType { get; private set; }
 
-        public  Vehicle(string make, string model, int speed) 
+        public Vehicle(string make, string model, Engine engineType) 
         {
             Make = make;
             Model = model;
-            Speed = speed;
+            EngineType = engineType;
         }
+
+        public void StartEngine() { EngineType.Start();  }
     }
 }

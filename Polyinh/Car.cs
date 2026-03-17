@@ -8,7 +8,7 @@ namespace Polyinh
 {
     public class Car : Vehicle
     {
-        public Car(string make, string model, int speed) : base(make, model, speed)
+        public Car(string make, string model, CarEngine engine) : base(make, model, engine)
         {
             
         }

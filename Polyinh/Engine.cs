@@ -17,5 +17,7 @@ namespace Polyinh
             this.FuelType = fuelType;
             Horsepower = horsepower;
         }
+
+        public void Start() { Running = true; }
     }
 }

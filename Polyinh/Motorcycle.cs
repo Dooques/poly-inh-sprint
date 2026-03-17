@@ -9,11 +9,9 @@ namespace Polyinh
     internal class Motorcycle : Vehicle
     {
         public bool HasSideCar { get; set; }
-        public Motorcycle(string name, string model, int speed, bool hasSideCar ) : base(name, model, speed)
+        public Motorcycle(string name, string model, int speed, bool hasSideCar, MotorcycleEngine engine) : base(name, model, engine)
         {
             HasSideCar = hasSideCar;
         }
-
-
     }
 }

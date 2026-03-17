@@ -9,12 +9,15 @@ namespace Shapes
     internal class Cylinder:Shape3D
     {
         public double Height { get; set; }
-        public Circle Shape { get; set; }
 
         public Cylinder(Circle shape, double height) : base(shape) 
         {  
             Height = height;
-            Shape = shape;
+            
+        }
+        public override double CalculateVolume()
+        {
+            throw new NotImplementedException();
         }
     }
 }

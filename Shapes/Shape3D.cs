@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    public class Shape3D
+    public abstract class Shape3D
     {
         public Shape BaseShape { get; set; }
 
@@ -15,5 +15,8 @@ namespace Shapes
             BaseShape = shape;
             
         }
+
+        public abstract double CalculateVolume();
+        
     }
 }

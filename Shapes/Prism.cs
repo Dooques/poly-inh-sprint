@@ -7,8 +7,17 @@ using System.Threading.Tasks;
 namespace Shapes
 {
     
-    internal class Prism
+    public class Prism:Shape3D
     {
         public double Height { get; set; }
+        public Prism(Triangle shape) : base(shape) 
+        {  
+            Height = shape.Height; 
+        }
+
+        public override double CalculateVolume()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

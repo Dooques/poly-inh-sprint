@@ -20,6 +20,21 @@ namespace Polyinh
             EngineType = engineType;
         }
 
+        public void Drive()
+        {
+            if (EngineType.Running)
+            {
+                Accelerate();
+            }
+            else 
+            {
+                Console.WriteLine($"{Make} {Model} is not running");
+            }
+                
+        }
+
+        public void Accelerate() { }
+
         public void StartEngine() { EngineType.Start();  }
     }
 }

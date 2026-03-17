@@ -8,7 +8,7 @@ namespace Polyinh
 {
     public abstract class Engine
     {
-        bool Running;
+        public bool Running { get; private set; }
         int Horsepower;
         FuelType FuelType;
 

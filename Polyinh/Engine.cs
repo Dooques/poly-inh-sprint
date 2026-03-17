@@ -9,15 +9,17 @@ namespace Polyinh
     public abstract class Engine
     {
         public bool Running { get; private set; }
-        int Horsepower;
-        FuelType FuelType;
+        public int HorsePower { get; private set; }
+        public FuelType FuelType { get; private set; }
 
         public Engine(FuelType fuelType, int horsepower)
         {
             this.FuelType = fuelType;
-            Horsepower = horsepower;
+            HorsePower = horsepower;
         }
 
         public void Start() { Running = true; }
+
+
     }
 }

@@ -33,7 +33,7 @@ namespace Polyinh
                 
         }
 
-        public void Accelerate() { }
+        public abstract void Accelerate();
 
         public void StartEngine() { EngineType.Start();  }
     }

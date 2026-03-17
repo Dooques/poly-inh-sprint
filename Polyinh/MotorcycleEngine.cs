@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Polyinh
 {       
-    internal class MotorcycleEngine:Engine
+    public class MotorcycleEngine:Engine
     {
         public MotorcycleEngine(FuelType fuelType = FuelType.Leaded, int horsepower = 100):base(fuelType, horsepower)
         {

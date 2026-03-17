@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Polyinh
 {
-    internal class Motorcycle : Vehicle
+    public class Motorcycle : Vehicle
     {
         public bool HasSideCar { get; set; }
         public Motorcycle(string name, string model, bool hasSideCar, MotorcycleEngine engine) : base(name, model, engine)
@@ -27,7 +27,7 @@ namespace Polyinh
 
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine($"{message}{((EngineType.HorsePower * fuelMod) * Math.Exp(Math.Sqrt(i)) / 2) * (HasSidecar ? 0.8 : 1.0)}mph");
+                Console.WriteLine($"{message}{((EngineType.HorsePower * fuelMod) * Math.Exp(Math.Sqrt(i)) / 2) * (HasSideCar ? 0.8 : 1.0)}mph");
             }
         }
     }

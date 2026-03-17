@@ -10,6 +10,9 @@
             var motorcycleEngine = new MotorcycleEngine();
             var hardyDaytona = new Motorcycle("Hardy", "Daytona", false, motorcycleEngine);
 
+            hardyDaytona.StartEngine();
+            impretza.StartEngine();
+
             hardyDaytona.Drive();
             impretza.Drive();
 

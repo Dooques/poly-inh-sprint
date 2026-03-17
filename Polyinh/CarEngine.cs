@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Polyinh
 {
-    internal class CarEngine
+    internal class CarEngine : Engine
     {
+
+        public CarEngine(int horsepower = 200, FuelType fuelType = FuelType.Diesel) 
+            : base(fuelType, horsepower)
+        {
+
+        }
     }
 }

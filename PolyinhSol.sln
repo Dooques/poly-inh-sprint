@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polyinh", "Polyinh\Polyinh.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{341F7997-4D87-4B23-BF93-673715414BE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon", "Pokemon\Pokemon.csproj", "{5998C895-FDE1-475C-9058-59B6C7438802}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{341F7997-4D87-4B23-BF93-673715414BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{341F7997-4D87-4B23-BF93-673715414BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{341F7997-4D87-4B23-BF93-673715414BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5998C895-FDE1-475C-9058-59B6C7438802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5998C895-FDE1-475C-9058-59B6C7438802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5998C895-FDE1-475C-9058-59B6C7438802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5998C895-FDE1-475C-9058-59B6C7438802}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
